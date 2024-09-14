@@ -21,7 +21,7 @@ head(marketing, 4)
 # sales = b0 + b1*youtube + b2*facebook + b3*newspaper
 #sales = 3.53 + 0.046*youtube + 0.188*facebook
 # we remove the newspaper because it is statistically insignificant
-# how powerful the model is to determine we need to observe the adjusted R-squared value(multiple linear) and  R-squared for (simple linear)
+# In order to determine how powerful the model we need to observe the adjusted R-squared value(multiple linear) and  R-squared for (simple linear) because R-Squared value increases when explanatory variables are added even if they are weekly associated
 
 model <- lm(sales ~ youtube + facebook + newspaper, data = marketing)
 summary(model)
